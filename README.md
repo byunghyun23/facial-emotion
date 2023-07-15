@@ -63,8 +63,9 @@ python predict.py --file_name file_name
 ```
 
 ## Music Recommendation
-We use Spotipy to get music recommendations based on emotion. 
-To recommend a variety of music, half of the keywords for each emotion are randomly selected and used for recommendation. 
+We use Spotipy to get music recommendations based on emotion.  
+To recommend a variety of music, half of the keywords for each emotion are randomly selected and used for recommendation.  
+
 Keywords for emotions are as follows.
 | emotion(kor)  | emotion(eng)  | keyword(eng)          |
 | ------------- | ------------- | ------------- |
