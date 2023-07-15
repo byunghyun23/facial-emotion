@@ -13,12 +13,12 @@ We used 6 emotions: happy, sad, angry, anxious, hurt, and neutral.
 The number of data for each emotion is as follows.
 | emotion(kor)  | emotion(eng)  | size          |
 | ------------- | ------------- | ------------- |
-| 기쁨          | happy         | 15000         |
-| 슬픔          | sad           | 15000         |
-| 분노          | angry         | 15000         |
-| 불안          | anxious       | 15000         |
-| 상처          | hurt          | 15000         |
-| 중립          | neutral       | 15000         |
+| 기쁨          | happy         | 14,830         |
+| 슬픔          | sad           | 14,871         |
+| 분노          | angry         | 14,980         |
+| 불안          | anxious       | 15,221         |
+| 상처          | hurt          | 15,144         |
+| 중립          | neutral       | 15,429         |
 
 ## Preprocessing
 We obtained the cropped face images from dataset using MTCNN. 
