@@ -52,7 +52,7 @@ python train.py
 ```
 After training, the following Facial Emotion Recognition model and One-Hot enocoder is generated.
 ```
---my_model.h5
+my_model.h5
 ```
 One-hot encoder is used to convert emotions.
 
