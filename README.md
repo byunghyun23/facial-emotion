@@ -21,7 +21,7 @@ The number of data for each emotion is as follows.
 | 중립          | neutral       | 15000         |
 
 ## Preprocessing
-We obtained the face in the image using MTCNN. 
+We obtained the cropped face images from dataset using MTCNN. 
 Also, we resized the size of the image to (224, 224) to use it as an input to the VGG-Face model. 
 The output of the VGG-Face model is facial features, which are used for learning. 
 You can do this by running
@@ -57,10 +57,23 @@ my_model.h5
 One-hot encoder is used to convert emotions.
 
 ## Predict
-You can get the emotion of an image by running
+You can get the emotion of input image by running
 ```
 python predict.py --file_name file_name
 ```
+
+## Music Recommendation
+We use Spotipy to get music recommendations based on emotion.
+To recommend a variety of music, half of the keywords for each emotion are randomly selected and used for recommendation.
+Keywords for emotions are as follows.
+| emotion(kor)  | emotion(eng)  | keyword(eng)          |
+| ------------- | ------------- | ------------- |
+| 기쁨          | happy         | happy, delighted, glad, exiting, pleased, energetic, cheerful, satisfied, fulfilled, overjoyed |
+| 슬픔          | sad           | sad, unhappy, tearful, gloomy, depressed, dejected, heartbroken, sorrowful, hurt, disappointed |
+| 분노          | angry         | angry, mad, upset, furious, livid, irritated, enraged, incensed, outburst, resentful |
+| 불안          | anxious       | anxious, nervous, uneasy, tense, worried, apprehensive, edgy, restless, uncertain, shaky |
+| 상처          | hurt          | hurt, injured, damaged, wounded, scarred, sore, bruised, painful, aching, afflicted |
+| 중립          | neutral       | neutral, emotionless, unfeeling, cold, unresponsive, impassive, apathetic, stoic, indifferent, unbiased |
 
 ## Demo
 Also, you can also use the model using Gradio by running
