@@ -8,7 +8,6 @@ This is a TensorFlow implementation for Music Recommendation based on Facial Emo
 
 ## Dataset
 For training the model, you need to download [this](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=82).  
-There are 7 emotions.  
 We used 6 emotions: happy, sad, angry, anxious, hurt, and neutral.
 
 The number of data for each emotion is as follows.
