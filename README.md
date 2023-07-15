@@ -21,9 +21,9 @@ The number of data for each emotion is as follows.
 | 중립          | neutral       | 15,429         |
 
 ## Preprocessing
-We obtained the cropped face images from dataset using MTCNN. 
-Also, we resized the size of the image to (224, 224) to use it as an input to the VGG-Face model. 
-The output of the VGG-Face model is facial features, which are used for learning. 
+We obtained the cropped face images from dataset using MTCNN.  
+Also, we resized the size of the image to (224, 224) to use it as an input to the VGG-Face model.  
+The output of the VGG-Face model is facial features, which are used for learning.  
 You can do this by running
 ```
 python preprocessing.py
