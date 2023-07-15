@@ -64,6 +64,12 @@ python predict.py --file_name file_name
 
 ## Music Recommendation
 We use Spotipy to get music recommendations based on emotion.  
+When using Spotify, you must issue ID and Secret and fill it out below.  
+```python
+# Set up your Spotify API credentials
+self.client_id = 'YOUR_ID'
+self.client_secret = 'YOUR_SECRET'
+```
 To recommend a variety of music, half of the keywords for each emotion are randomly selected and used for recommendation.  
 
 Keywords for emotions are as follows.
