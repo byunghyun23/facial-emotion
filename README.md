@@ -88,4 +88,5 @@ Also, you can also use the model using Gradio by running
 python web.py
 ```
 ![image](https://github.com/byunghyun23/facial-emotion/blob/main/assets/fig3.png)
+![image](https://github.com/byunghyun23/facial-emotion/blob/main/assets/fig4.png)
 
