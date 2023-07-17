@@ -6,6 +6,8 @@ from keras_vggface.vggface import VGGFace
 from keras_vggface.utils import preprocess_input
 import numpy as np
 from tensorflow.python.keras.models import load_model
+from tensorflow.keras import regularizers
+import tensorflow as tf
 
 
 class MyModel:
@@ -28,11 +30,13 @@ class MyModel:
         last_layer = vgg_model.get_layer('avg_pool').output
         x = Flatten(name='flatten')(last_layer)
         x = Dense(self.hidden_dim*2, activation='relu')(x)
-        x = Dense(self.hidden_dim, activation='relu')(x)
+        x = Dense(self.hidden_dim, activation='relu', kernel_regularizer=regularizers.l1(0.001))(x)
+        x = Dense(self.hidden_dim, activation='relu', kernel_regularizer=regularizers.l2(0.001))(x)
         out = Dense(self.nb_class, activation='softmax')(x)
 
+        adam = tf.keras.optimizers.Adam(learning_rate=0.0001)
         self.custom_vgg_model = Model(vgg_model.input, out)
-        self.custom_vgg_model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['acc'])
+        self.custom_vgg_model.compile(loss='categorical_crossentropy', optimizer=adam, metrics=['acc'])
 
     def __batch_generator(self, X_train, Y_train, batch_size):
         while True:

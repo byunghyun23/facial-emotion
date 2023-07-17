@@ -50,7 +50,7 @@ def load_data(model, images_dir, start=0, end=None):
 
 @click.command()
 @click.option('--data_dir', default='data/processed', help='Data directory')
-@click.option('--batch_size', default=8, help='Batch size')
+@click.option('--batch_size', default=16, help='Batch size')
 @click.option('--epochs', default=300, help='Epochs')
 @click.option('--encoder_name', default='encoder.pkl', help='Encoder name')
 @click.option('--train_split', default=0.8, help='Train split')

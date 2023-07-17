@@ -13,6 +13,7 @@ def upload_image(image):
 
         return recommend
     except Exception as e:
+        print(e)
         return "Sorry, I can't recognize your face.\n"
 
 
