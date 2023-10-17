@@ -1,7 +1,7 @@
 # Music Recommendation Based on Facial Emotion Recognition Using MTCNN and VGG-Face
 
 ## Introduction
-This is a TensorFlow Implementation for Music Recommendation based on Facial Emotion Recognition Using MTCNN and VGG-Face.
+This is a TensorFlow implementation for Music Recommendation based on Facial Emotion Recognition using MTCNN and VGG-Face.
 
 ![image](https://github.com/byunghyun23/facial-emotion/blob/main/assets/fig1.png)
 ![image](https://github.com/byunghyun23/facial-emotion/blob/main/assets/fig2.png)
